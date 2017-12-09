@@ -1,0 +1,49 @@
+#!/usr/bin/python
+
+import cgi
+import MySQLdb
+import credentials
+from utilities import *
+from sets import Set
+import sys
+
+host = credentials.getHost()
+user = credentials.getUser()
+passwd = credentials.getPasswd()
+dbname = credentials.getDB()
+
+fields = cgi.FieldStorage()
+
+db = MySQLdb.Connection(host,
+                user,
+                passwd,
+                dbname)
+
+cur = db.cursor()
+
+credentials.authenticate(db,cur)
+
+fields = cgi.FieldStorage()
+guest_id = fields.getvalue('id')
+first = fields.getvalue('first')
+last = fields.getvalue('last')
+first2 = fields.getvalue('first2')
+last2 = fields.getvalue('first2')
+address = fields.getvalue('address')
+email = fields.getvalue('email')
+max_guests = fields.getvalue('max')
+tag = fields.getvalue('tag')
+
+try:
+  sql = "update guest set first = '%s', last = '%s', first2 = '%s', second2 = '%s', address = '%s', email = '%s', max_guests = %s, tags = '%s' where guest_id = %s" % (first, last, first2, last2, address, email, max_guests, tag, guest_id)
+  #cur.execute(sql)
+  #db.commit()
+
+  print ""
+  print "<html><body>%s</body></html>"
+
+except:
+  print "<h3>Error</h3>"
+finally:
+  db.close()
+
