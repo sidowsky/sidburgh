@@ -35,7 +35,7 @@ img{margin-bottom:-5px}a{color:inherit}
 table{border-collapse:collapse;border-spacing:0;width:100%;display:table}
 table,th,td{border:none}.w3-table-all{border:1px solid #ccc}
 .w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}
-.w3-striped tbody tr:nth-child(even){background-color:darkslategrey}
+.w3-striped tbody tr:nth-child(even){background-color:grey}
 .w3-table-all tr:nth-child(odd){background-color:#fff}
 .w3-table-all tr:nth-child(even){background-color:#f1f1f1}
 .w3-hoverable tbody tr:hover,.w3-ul.w3-hoverable li:hover{background-color:#ccc}

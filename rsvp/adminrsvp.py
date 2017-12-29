@@ -28,16 +28,21 @@ createNavigation()
 
 createScript("adminrsvp.js")
 
-print "<div>"
-
-
-
 try:
+
+
+
+
+
+
+
+
   
   sql = "SELECT name from event where user_id=1"
   cur.execute(sql)
   results = cur.fetchall()
 
+  print "<div>"
   print "<fieldset>"
   print "<legend>Event</legend>"
 
@@ -76,11 +81,11 @@ try:
   print "<tr class=w3-theme>"
   print "<th class=w3-centered>First</th>"
   print "<th class=w3-centered>Last</th>"
-  print "<th class=w3-centered>Other</th>"
-  print "<th class=w3-centered>Email</th>"
+  #print "<th class=w3-centered>Other</th>"
+  #print "<th class=w3-centered>Email</th>"
   print "<th class=w3-centered>RSVP</th>"
   print "<th class=w3-centered>Count</th>"
-  print "<th class=w3-centered>Address</th>"
+  print "<th class=w3-centered>Notes</th>"
   print "</tr>"
   print "</thead>"
   print "<tbody id=\"results\">"

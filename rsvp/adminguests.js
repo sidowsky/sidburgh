@@ -7,14 +7,14 @@ function saveGuest(guest_id)
     }
   };
 
-  var first = $("#first_".concat(guest_id)).val();
-  var last = $("#last_".concat(guest_id)).val();
-  var first2 = $("#first2_".concat(guest_id)).val();
-  var last2 = $("#last2_".concat(guest_id)).val();
-  var address = $("#address_".concat(guest_id)).val().replace("\n"," ");
-  var email = $("#email_".concat(guest_id)).val();
-  var max = $("#max_".concat(guest_id)).val();
-  var tag = $("#tag_".concat(guest_id)).val();
+  var first = $("#first_".concat(guest_id)).text();
+  var last = $("#last_".concat(guest_id)).text();
+  var first2 = $("#first2_".concat(guest_id)).text();
+  var last2 = $("#last2_".concat(guest_id)).text();
+  var address = $("#address_".concat(guest_id)).text();
+  var email = $("#email_".concat(guest_id)).text();
+  var max = $("#max_".concat(guest_id)).text();
+  var tag = $("#tag_".concat(guest_id)).text();
 
   var params = "id=".concat(guest_id);
   params = params.concat("&name=").concat(first);

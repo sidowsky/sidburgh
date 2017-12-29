@@ -42,15 +42,15 @@ try:
   print "<th class=w3-centered>Last</th>"
   print "<th class=w3-centered>First</th>"
   print "<th class=w3-centered>Last</th>"
-  print "<th class=w3-centered>Address</th>"
   print "<th class=w3-centered>Email</th>"
+  print "<th class=w3-centered>Address</th>"
   print "<th class=w3-centered>Max</th>"
   print "<th class=w3-centered>Category</th>"
   print "</tr>"
   print "</thead>"
   print "<tbody>"
 
-  sql = "SELECT * from guest where user_id=1"
+  sql = "SELECT * from guest where user_id=1 order by tags,last,first"
   cur.execute(sql)
   results = cur.fetchall()
 
@@ -76,36 +76,36 @@ try:
     #print "<input type=submit value=\"Save\" onclick=\"saveGuest(\'%s\')\"/>" % guest_id
     print "</td>"
 
-    print "<td>"
-    print "<input style=\"font-size: 12px\" type=text maxlength=15 size=10 id=\"first_%s\" value=%s>" % (guest_id, first)
+    print "<td class=g contenteditable=true id=\"first_%s\">" % guest_id
+    print first
     print "</td>"
 
-    print "<td>"
-    print "<input style=\"font-size: 12px\" type=text maxlength=15 size=10 id=\"last_%s\" value=%s>" % (guest_id, last)
+    print "<td class=g contenteditable=true id=\"last_%s\">" % guest_id
+    print last
     print "</td>"
 
-    print "<td>"
-    print "<input style=\"font-size: 12px\" type=text maxlength=15 size=10 id=\"first2_%s\" value=%s>" % (guest_id, first2)
+    print "<td class=g contenteditable=true id=\"first2_%s\">" % guest_id
+    print first2
     print "</td>"
 
-    print "<td>"
-    print "<input style=\"font-size: 12px\" type=text maxlength=15 size=10 id=\"last2_%s\" value=%s>" % (guest_id, last2)
+    print "<td class=g contenteditable=true id=\"last2_%s\">" % guest_id
+    print last2
     print "</td>"
 
-    print "<td>"
-    print "<textarea cols=25 rows=3 id=\"address_%s\">%s</textarea>" % (guest_id, address)
+    print "<td class=g contenteditable=true id=\"email_%s\">" % guest_id
+    print email
     print "</td>"
 
-    print "<td>"
-    print "<input style=\"font-size: 12px\" type=text maxlength=30 size=25 id=\"email_%s\" value=%s>" % (guest_id, email)
+    print "<td class=ga contenteditable=true id=\"address_%s\">" % guest_id
+    print address
     print "</td>"
 
-    print "<td>"
-    print "<input style=\"font-size: 12px\" type=text maxlength=2 size=2 id=\"max_%s\" value=%s>" % (guest_id, max_guests)
+    print "<td class=gm contenteditable=true id=\"max_%s\">" % guest_id
+    print max_guests
     print "</td>"
 
-    print "<td>"
-    print "<input style=\"font-size: 12px\" type=text maxlength=10 size=10 id=\"tag_%s\" value=%s>" % (guest_id, category)
+    print "<td class=gc contenteditable=true id=\"tag_%s\">" % guest_id
+    print category
     print "</td>"
 
 

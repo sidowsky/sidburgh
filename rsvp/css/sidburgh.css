@@ -9,6 +9,23 @@ textarea {
   font-size: 12px;
 }
 
+td.g {
+  color: white;
+}
+
+td.ga {
+  color: lightblue;
+}
+
+td.gc {
+  color: gold;
+}
+
+td.gm {
+  text-align: center;
+  color: lawngreen;
+}
+
 ul.topnav {
   list-style-type: none;
   margin: 0;

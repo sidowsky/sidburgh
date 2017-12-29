@@ -61,7 +61,7 @@ def createNavigation():
   print "<ul class=\"topnav\" id=\"myTopnav\">"
   print "<li><a href=\"adminrsvp.py\">RSVP</a></li>"
   print "<li><a href=\"adminguests.py\">Guests</a></li>"
-  print "<li><a href=\"\">None</a></li>"
+  print "<li><a href=\"adminsummary.py\">Summary</a></li>"
   print "<li><a href=\"\">None</a></li>"
   print "</ul>"
   print "</div>"
