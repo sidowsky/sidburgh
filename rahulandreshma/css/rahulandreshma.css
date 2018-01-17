@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Syncopate");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+@keyframes animate {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slide {
+    from {margin: 100%;}
+    to {margin: 0;}
+}
+
+html,body {
+  outline: 0;
+  margin: 0;
+  vertical-align: baseline;
+  background-color: #fff;
+  padding-top: 0;
+  z-index: -1;
+  animation-name: slide;
+  animation-duration: 0.5s;
+}
+
+body.story {
+  outline: 0;
+  margin: 0;
+  vertical-align: baseline;
+  background-color: #fff;
+  padding-top: 0;
+  z-index: -1;
+  animation-name: animate;
+  animation-duration: 4s;
+}
+
+section {
+  width: 100%;
+}
+
+
+div.menu {
+
+  text-align: center;
+}
+
+h1.top {
+  font-family: Syncopate;
+  font-size: 80px;
+  text-align: center;
+  color: #2737FB;
+}
+
+a.menu {
+  font-family: Syncopate;
+  font-weight: bold;
+  font-size: 35px;
+  text-decoration: none;
+  color: #2737FB;
+}
+
+a.hotel {
+  text-decoration: none;
+}
+
+a.current {
+  font-family: Syncopate;
+  font-weight: bold;
+  font-size: 35px;
+  text-decoration: underline;
+  color: #2737FB;
+}
+
+a.menu:hover {
+  text-decoration: underline;
+}
+
+div.contentbg {
+  z-index: -1;
+  background-image: url("../IMG_3341.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1.0;
+}
+
+div.contentbgstory {
+  z-index: -1;
+  #background-image: url("../IMG_6787.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1.0;
+  border-style: solid;
+  border-width: 0px 25px 0px 25px;
+  border-color: #2737FB;
+}
+
+div.contentbghotel {
+  z-index: -1;
+  background-image: url("../moon-palace-cancun.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+div.contentbgevents {
+  z-index: -1;
+  background-image: url("../IMG_7062.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+}
+
+div.contentbgregistry {
+  z-index: -1;
+  background-color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+
+div.event {
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: white;
+  background-size: cover;
+}
+
+div.content {
+  z-index: 1;
+  width: 100%;
+  top: 0%;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  font-family: Raleway;
+}
+
+img.story {
+  #height: 25%;
+  width: 25%;
+}
+
+img.hotel {
+  height: auto;
+  width: 25%;
+}
+
+h1.story {
+  font-family: Roboto;
+  color: black;
+  font-weight: bold;
+}
+
+p.story {
+  font-family: Roboto;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  color: black;
+}
+
+p.hotel {
+  font-family: Roboto;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p.events {
+  text-align: center;
+  font-family: Roboto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  color: black;
+}
+
+h3.events {
+  text-align: center;
+  font-family: Roboto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  color: black;
+}
+
+li {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
