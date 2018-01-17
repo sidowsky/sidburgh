@@ -194,6 +194,26 @@ h3.faq {
   width: 75%;
 }
 
+h3.rsvp {
+  font-family: Roboto;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+h4.rsvp {
+  font-family: Syncopate;
+  color: #2737FB;
+  font-weight: bold;
+  text-align: center;;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
 p.rsvp {
   font-family: Roboto;
   text-align: center;

@@ -57,18 +57,20 @@ try:
 
     if flag == 0:
       if first2 != "" and last2 != "":
-        print "<h3 class=faq>Welcome, " + first + " " + last + " & " + first2 + " " + last2 + "!</h4>"
+        print "<h3 class=rsvp>Welcome, " + first + " " + last + " & " + first2 + " " + last2 + "!</h4>"
       else:
-        print "<h3 class=faq>Welcome, " + first + " " + last + "!</h4>"
+        print "<h3 class=rsvp>Welcome, " + first + " " + last + "!</h4>"
     
-      print "<p class=story>" + email + "</p>"
+      print "<p class=rsvp>" + email + "</p>"
 
       flag = 1
 
-    print "<p class=story>"
-    print "<font color=black>" + event + "</font>"
-    print "<br>"
-    print "<font color=black>" + str(date.strftime("%A, %B %d, %Y %I:%M %p")) + "</font>"
+    print "<h4 class=rsvp>"
+    print event
+    print "</h4>"
+
+    print "<p class=rsvp>"
+    print str(date.strftime("%A, %B %d, %Y %I:%M %p"))
     print "<br>"
     print location.replace("\n","<br>")
     print "</p>"
