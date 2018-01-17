@@ -19,14 +19,20 @@ db = MySQLdb.Connection(host,
 
 cur = db.cursor()
 
-createHeader("Rahul & Reshma")
+createHeader("Reshma & Rahul")
+
+print "<br>"
+print "<h3 class=rsvp>"
+print "Please RSVP by March 30"
+print "</h3>"
 
 print "<form action=\"http://www.sidburgh.com/rsvp/rsvp.py\" method=\"post\">"
-print "First Name: <input type=\"text\" name=\"first\"/><br><br>"
-print "Last Name: <input type=\"text\" name=\"last\"/><br><br>"
-print "Password: &#160;<input type=\"password\" name=\"passwd\"/><br><br>"
+print "<input type=\"text\" placeholder=\"First\" name=\"first\"/><br>"
+print "<input type=\"text\" placeholder=\"Last\" name=\"last\"/><br>"
+print "<input type=\"password\" placeholder=\"Password\" name=\"passwd\"/><br>"
 print "<input type=\"hidden\" name=\"user\" value=\"1\"/>"
-print "<input type=\"submit\" value=\"Submit\"/>"
+print "<br>"
+print "<input type=\"submit\" value=\"Continue\"/>"
 print "</form>"
 
 

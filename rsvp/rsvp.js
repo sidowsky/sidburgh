@@ -19,8 +19,8 @@ function submitRSVP()
     rsvp = 0
   }
 
-  notes = notes.replace(/'/g,"\\'");
-  notes = notes.replace(/\"/g,"\\\"");
+  //notes = notes.replace(/'/g,"\\'");
+  //notes = notes.replace(/\"/g,"\\\"");
 
 
   var params = "user=".concat(user).concat("&guest=").concat(guest).concat("&attending=").concat(attending).concat("&rsvp=").concat(rsvp).concat("&notes=").concat(notes)

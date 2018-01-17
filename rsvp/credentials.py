@@ -85,3 +85,22 @@ def authenticateUser(cur, passwd, user, admin):
 
   return False
 
+def authenticateGuest(cur, passwd, first, last):
+  sql = "SELECT password from guest where ((first = '" + str(first) + "' and last = '" + str(last) + "') or (first2 = '" + str(first) + "' and last2 = '" + str(last) + "'))"
+
+  try:
+    cur.execute(sql)
+
+    results = cur.fetchall()
+
+    for row in results:
+      check_passwd = row[0]
+
+    if passwd == check_passwd:
+      return True
+  except:
+    print "<h3>Error</h3>"
+  
+  print "<h3>Invalid Credentials!</h3>"
+
+  return False

@@ -28,14 +28,17 @@ createNavigation()
 
 rsvp = {}
 rsvp[0]="<strong><font color=red>NO</font></strong>"
-rsvp[1]="<strong><font color=lawngreen>YES</font></strong>"
-rsvp[-1]="<strong><font color=lightgray>N/A</font></strong>"
+rsvp[1]="<strong><font color=green>YES</font></strong>"
+rsvp[-1]="<strong><font color=blue>N/A</font></strong>"
 
 
 
 try:
   
-  sql = "select e.name,g.tags,r.rsvp,sum(attending) from user u,rsvp r,guest g,event e,event_guest eg where u.user_id=1 and u.user_id=r.user_id and r.guest_id=g.guest_id and r.guest_id=eg.guest_id and e.event_id=eg.event_id group by r.rsvp desc,g.tags,e.name"
+  sql = "select g.tags,r.rsvp,sum(attending) from user u,rsvp r,guest g where u.user_id=1 and u.user_id=r.user_id and r.guest_id=g.guest_id group by r.rsvp desc,g.tags"
+
+  
+
   cur.execute(sql)
   results = cur.fetchall()
 
@@ -46,7 +49,7 @@ try:
   print "<table id=stats class=\"tablesorter w3-table w3-bordered w3-striped\">"
   print "<thead>"
   print "<tr class=w3-theme>"
-  print "<th class=w3-centered>Event</th>"
+  #print "<th class=w3-centered>Event</th>"
   print "<th class=w3-centered>Category</th>"
   print "<th class=w3-centered>RSVP</th>"
   print "<th class=w3-centered>Count</th>"
@@ -55,16 +58,15 @@ try:
   print "<tbody id=\"results\">"
 
   for row in results:
-    event = row[0]
-    category = row[1]
-    response = row[2]
-    count = row[3]
+    category = row[0]
+    response = row[1]
+    count = row[2]
 
     print "<tr>"
 
-    print "<td>"
-    print event
-    print "</td>"
+    #print "<td>"
+    #print event
+    #print "</td>"
 
     print "<td>"
     print category

@@ -70,8 +70,8 @@ try:
     print "</td>"
 
     print "<td>"
-    print "<a href=\"#\" onclick=\"saveGuest(\'%s\')\">" % guest_id
-    print "<i class=\"fa fa-save\" style=\"font-size:24px;color:white\"></i>"
+    print "<a onclick=\"saveGuest(\'%s\')\">" % guest_id
+    print "<i class=\"fa fa-save\" style=\"font-size:24px;color:black\"></i>"
     print "</a>"
     #print "<input type=submit value=\"Save\" onclick=\"saveGuest(\'%s\')\"/>" % guest_id
     print "</td>"

@@ -50,13 +50,11 @@ try:
     email = str(row[7])
     guests = row[8]
 
-    print "<font color=yellow>" 
     if first2 != "" and last2 != "":
       print "<p>" + first + " " + last + " & " + first2 + " " + last2 + "</p>"
     else:
       print "<p>" + first + " " + last + "</p>"
     
-    print "</font>"
 
     print "<p>" + email + "</p>"
 

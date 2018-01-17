@@ -38,11 +38,12 @@ print "<body>"
 try:
   cur.execute(sql)
 
+
   sql = "select * from rsvp where user_id = " + user + " and guest_id = " + guest
   cur.execute(sql)
 
   if cur.rowcount == 0:
-    sql = "insert ignore into rsvp values (" + str(user) + "," + str(guest) + ",-1,0,'')"
+    sql = "insert ignore into rsvp (user_id,guest_id,rsvp,attending,notes) values (" + str(user) + "," + str(guest) + ",-1,0,'')"
     cur.execute(sql)
 
   db.commit()

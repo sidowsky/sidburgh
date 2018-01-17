@@ -25,13 +25,16 @@ def createHeader(title, admin=False, session=""):
   print "<html lang=\"en\">"
   print "<head>"
   print "  <title>" + title + "</title>"
-  print "  <meta charset=\"utf-8\">"
-  print "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=yes\">"
+  print "  <meta charset=\"text/html; charset=ISO-8859-1\">"
+  #print "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=yes\">"
   print "  <link rel=\"stylesheet\" href=\"//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css\">"
+  print "  <link rel=\"stylesheet\" href=\"css/sidburgh.css\">"
   print "  <link rel=\"stylesheet\" href=\"css/w3.css\">"
   print "  <link rel=\"stylesheet\" href=\"css/w3-theme-green.css\">"
   print "  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">"
-  print "  <link rel=\"stylesheet\" href=\"css/sidburgh.css\">"
+
+  if not admin:
+    print "  <link rel=\"stylesheet\" href=\"http://www.rahulandreshma.com/css/rahulandreshma.css\">"
   print "  <link rel=\"stylesheet\" href=\"http://visualidiot.com/files/real-world.css\">"
   print "  <script src=\"https://code.jquery.com/jquery-1.12.4.js\"></script>"
   print "  <script src=\"https://code.jquery.com/ui/1.12.0/jquery-ui.js\"></script>"
@@ -50,11 +53,17 @@ def createHeader(title, admin=False, session=""):
   print "  </script>"
   print "</head>"
   print "<body>"
+  print "<div class=content>"
 
   if not admin:
+    print "<div class=contentbgstory></div>"
     print "<br>"
-    print "<img src=\"home.png\"/><br>"
-    print "<h2>Rahul & Reshma</h2>"
+    print "<h1 class=top>Reshma & Rahul</h1>"
+    print "<div>"
+    print "<img class=story src=\"IMG_6066.JPG\"></img>"
+    print "<img class=story src=\"IMG_6059.JPG\"></img>"
+    print "<img class=story src=\"IMG_6067.JPG\"></img>"
+    print "</div>"
 
 def createNavigation():
   print "<div>"
@@ -67,6 +76,7 @@ def createNavigation():
   print "</div>"
 
 def createFooter():
+  print "</div>"
   print "</body>"
   print "</html>"
 

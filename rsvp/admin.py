@@ -16,7 +16,8 @@ createHeader("ADMIN: Rahul & Reshma")
 
 fields = cgi.FieldStorage()
 
+print "<br>"
 print "<form action=\"http://www.sidburgh.com/rsvp/adminhome.py\" method=\"post\">"
-print "Password: <input type=\"password\" name=\"passwd\"/><br>"
+print "<input type=\"password\" placeholder=\"Password\" name=\"passwd\"/><br>"
 print "<input type=\"hidden\" name=\"user\" value=\"1\"/>"
 print "</form>"

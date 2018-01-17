@@ -65,11 +65,11 @@ try:
     print "<td class=w3-centered>" + email  + "</td>"'''
 
     if rsvp == -1:
-      print "<td class=w3-centered><strong><font color=lightgray>N/A</font></strong></td>"
+      print "<td class=w3-centered><strong><font color=blue>N/A</font></strong></td>"
     elif rsvp == 0:
       print "<td class=w3-centered><strong><font color=red>NO</font></strong></td>"
     elif rsvp == 1:
-      print "<td class=w3-centered><strong><font color=lawngreen>YES</font></strong></td>"
+      print "<td class=w3-centered><strong><font color=green>YES</font></strong></td>"
 
     print "<td class=w3-centered>" + str(attending)  + "</td>"
 

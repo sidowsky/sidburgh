@@ -1,7 +1,62 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Syncopate");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+div.content {
+  z-index: 1;
+  width: 100%;
+  top: 0%;
+  height: 100%;
   text-align: center;
-  color: white;
-  background-color: black;
+  background-color: white;
+  position: absolute;
+  font-family: Raleway;
+}
+
+div.contentbg {
+  z-index: -1;
+  #background-image: url("../IMG_6787.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1.0;
+  border-style: solid;
+  border-width: 0px 25px 0px 25px;
+  border-color: #2737FB;
+}
+
+img {
+  max-width: 25%;
+  max-height: 25%;
+  border-radius: 70%;
+}
+
+h1 {
+  font-family: Syncopate;
+  text-align: center;
+  color: #2737FB;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+body {
+  font-family: Raleway;
+  text-align: center;
+  color: #2737FB;
+  font-weight: bold;
+  background-color: white;
+  border-width: 0px 25px 0px 25px;
+  border-color: #2737FB;
+  border-style: solid;
+
 }
 
 textarea {
@@ -9,21 +64,27 @@ textarea {
   font-size: 12px;
 }
 
+td {
+  color: black;
+}
+
 td.g {
-  color: white;
+  color: black;
 }
 
 td.ga {
-  color: lightblue;
+  color: navy;
 }
 
 td.gc {
-  color: gold;
+  color: red;
+  font-weight: bold;
 }
 
 td.gm {
   text-align: center;
-  color: lawngreen;
+  color: red;
+  font-weight: bold;
 }
 
 ul.topnav {
