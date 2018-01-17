@@ -57,15 +57,15 @@ try:
 
     if flag == 0:
       if first2 != "" and last2 != "":
-        print "<h4>Welcome, " + first + " " + last + " & " + first2 + " " + last2 + "!</h4>"
+        print "<h3 class=faq>Welcome, " + first + " " + last + " & " + first2 + " " + last2 + "!</h4>"
       else:
-        print "<h4>Welcome, " + first + " " + last + "!</h4>"
+        print "<h3 class=faq>Welcome, " + first + " " + last + "!</h4>"
     
-      print "<p>" + email + "</p>"
+      print "<p class=story>" + email + "</p>"
 
       flag = 1
 
-    print "<p>"
+    print "<p class=story>"
     print "<font color=black>" + event + "</font>"
     print "<br>"
     print "<font color=black>" + str(date.strftime("%A, %B %d, %Y %I:%M %p")) + "</font>"

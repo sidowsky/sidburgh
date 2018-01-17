@@ -22,7 +22,7 @@ cur = db.cursor()
 createHeader("Reshma & Rahul")
 
 print "<br>"
-print "<h3 class=rsvp>"
+print "<h3 class=faq>"
 print "Please RSVP by March 30"
 print "</h3>"
 

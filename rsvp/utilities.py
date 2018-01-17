@@ -64,6 +64,8 @@ def createHeader(title, admin=False, session=""):
     print "<img class=story src=\"IMG_6059.JPG\"></img>"
     print "<img class=story src=\"IMG_6067.JPG\"></img>"
     print "</div>"
+    print "<br>" 
+    print "<br>"
 
 def createNavigation():
   print "<div>"
