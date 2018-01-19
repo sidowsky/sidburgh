@@ -29,8 +29,10 @@ rsvp = fields.getvalue('rsvp')
 attending = fields.getvalue('attending')
 notes_raw = fields.getvalue('notes')
 
-notes = notes_raw.replace("'","\\\'")
-notes = notes.replace("\"","\\\"")
+notes = escape(notes_raw)
+
+#notes = notes_raw.replace("'","\\'")
+#notes = notes.replace("\"","\\\"")
 
 sql = "update rsvp set rsvp = " + str(rsvp) + ", attending = " + str(attending)  + ", notes = '" + notes + "', rsvp_time=NOW() where user_id = " + user + " and guest_id = " + guest
 

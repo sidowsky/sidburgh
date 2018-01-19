@@ -39,6 +39,10 @@ try:
 
   results = cur.fetchall()
 
+  if len(results) == 0:
+    print "<h3 class=rsvp>There is no guest with that name.</h3>"
+    sys.exit()
+
   flag = 0
 
   for row in results:
@@ -49,11 +53,16 @@ try:
     first2  = str(row[4])
     last2  = str(row[5])
     address = str(row[6])
-    email = str(row[7])
-    guests = row[8]
-    event = row[14]
-    location = row[15]
-    date = row[16] 
+    address1 = str(row[7])
+    city = str(row[8])
+    state = str(row[9])
+    post = str(row[10])
+    country = str(row[11])
+    email = str(row[12])
+    guests = row[13]
+    event = row[19]
+    location = row[20]
+    date = row[21] 
 
     if flag == 0:
       if first2 != "" and last2 != "":
