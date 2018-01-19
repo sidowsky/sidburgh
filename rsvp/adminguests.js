@@ -12,6 +12,11 @@ function saveGuest(guest_id)
   var first2 = $("#first2_".concat(guest_id)).text();
   var last2 = $("#last2_".concat(guest_id)).text();
   var address = $("#address_".concat(guest_id)).text();
+  var address2 = $("#address2_".concat(guest_id)).text();
+  var city = $("#city_".concat(guest_id)).text();
+  var state = $("#state_".concat(guest_id)).text();
+  var post = $("#post_".concat(guest_id)).text();
+  var country = $("#country_".concat(guest_id)).text();
   var email = $("#email_".concat(guest_id)).text();
   var max = $("#max_".concat(guest_id)).text();
   var tag = $("#tag_".concat(guest_id)).text();
@@ -25,6 +30,11 @@ function saveGuest(guest_id)
   params = params.concat("&max=").concat(max);
   params = params.concat("&tag=").concat(tag);
   params = params.concat("&address=").concat(address);
+  params = params.concat("&address2=").concat(address2);
+  params = params.concat("&city=").concat(city);
+  params = params.concat("&state=").concat(state);
+  params = params.concat("&post=").concat(post);
+  params = params.concat("&country=").concat(country);
 
   //document.getElementById("results").innerHTML = params
 

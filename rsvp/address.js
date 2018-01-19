@@ -8,7 +8,9 @@ function updateAddress()
   };
   var user = $("#user").val();
   var guest = $("#guest").val();
-  var address = $("#address").val();
+  
+  var address = $("#street1").val().concat("\n").concat($("#street2").val()).concat("\n").concat($("#city").val()).concat("\n").concat($("#state").val()).concat("\n").concat($("#post").val()).concat("\n").concat($("#country").val());
+  
   var params = "user=".concat(user).concat("&guest=").concat(guest).concat("&address=").concat(address)
   xhttp.open("POST", "addresshelper.py", true);
   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");

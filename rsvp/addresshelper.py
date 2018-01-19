@@ -22,9 +22,14 @@ cur = db.cursor()
 fields = cgi.FieldStorage()
 user = fields.getvalue('user')
 guest = fields.getvalue('guest')
-address = fields.getvalue('address')
+address = escape(fields.getvalue('address'))
+address2 = escape(fields.getvalue('address2'))
+city = escape(fields.getvalue('city'))
+state = escape(fields.getvalue('state'))
+post = escape(fields.getvalue('post'))
+country = escape(fields.getvalue('country'))
 
-sql = "update guest set address = '" + str(address) + "' where user_id = " + user + " and guest_id = " + guest
+sql = "update guest set address='%s', address2='%s', city='%s', state='%s', zip='%s',country='%s' where user_id = %s and guest_id = %s" % (address,address2,city,state,post,country,user,guest)
 
 
 print "Content-Type: text/html"

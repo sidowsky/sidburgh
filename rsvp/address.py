@@ -47,8 +47,13 @@ try:
     first2  = str(row[4])
     last2  = str(row[5])
     address = str(row[6])
-    email = str(row[7])
-    guests = row[8]
+    address2 = str(row[7])
+    city = str(row[8])
+    state = str(row[9])
+    post = str(row[10])
+    country = str(row[11])
+    email = str(row[12])
+    guests = row[13]
 
     if first2 != "" and last2 != "":
       print "<h3 class=rsvp>Welcome, " + first + " " + last + " & " + first2 + " " + last2 + "!</h3>"
@@ -61,13 +66,20 @@ try:
     print "Enter Mailing Address:"
     print "<br>"
     #print "<textarea id=\"address\" col=80 rows=6>" + address  +  "</textarea>"
-    print "<input placeholder=\"Street Address\" type=\"text\" id=\"street1\" size=20 maxlength=20/><br>"
-    print "<input placeholder=\"\" type=\"text\" id=\"street2\" size=20 maxlength=20/><br><br>"
-    print "<input placeholder=\"City\" type=\"text\" id=\"city\" size=20 maxlength=20/>"
-    print "<input placeholder=\"State/Territory\" type=\"text\" id=\"state\" size=20 maxlength=20/><br>"
-    print "<input placeholder=\"Postcode\" type=\"text\" id=\"post\" size=20 maxlength=20/><br>"
-    print "<input placeholder=\"Country\" type=\"text\" id=\"country\" size=20 maxlength=20/><br>"
-    
+    print "<input placeholder=\"Street Address\" type=\"text\" id=\"street1\" size=40 maxlength=40 value=\"%s\"/>" % address
+    print "<br>"
+    print "<input placeholder=\"\" type=\"text\" id=\"street2\" size=40 maxlength=40 value=\"%s\"/>" % address2
+    print "<br>"
+    print "<br>"
+    print "<input placeholder=\"City\" type=\"text\" id=\"city\" size=40 maxlength=40 value=\"%s\"/>" % city
+    print "<br>"
+    print "<input placeholder=\"State/Territory\" type=\"text\" id=\"state\" size=40 maxlength=40 value=\"%s\"/>" % state
+    print "<br>"
+    print "<br>"
+    print "<input placeholder=\"Postcode\" type=\"text\" id=\"post\" size=20 maxlength=20 value=\"%s\"/>" % post
+    print "<br>"
+    print "<input placeholder=\"Country\" type=\"text\" id=\"country\" size=20 maxlength=20 value=\"%s\"/>" % country
+    print "<br>"
     print "<br>"
     print "<input type=\"hidden\" id=\"guest\" value=\"" + str(guest_id) + "\"/>"
     print "<input type=\"hidden\" id=\"user\" value=\"" + str(user_id)  + "\"/>"

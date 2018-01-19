@@ -44,6 +44,11 @@ try:
   print "<th class=w3-centered>Last</th>"
   print "<th class=w3-centered>Email</th>"
   print "<th class=w3-centered>Address</th>"
+  print "<th class=w3-centered>Address2</th>"
+  print "<th class=w3-centered>City</th>"
+  print "<th class=w3-centered>State</th>"
+  print "<th class=w3-centered>Post</th>"
+  print "<th class=w3-centered>Country</th>"
   print "<th class=w3-centered>Max</th>"
   print "<th class=w3-centered>Category</th>"
   print "</tr>"
@@ -61,9 +66,14 @@ try:
     first2 = row[4]
     last2 = row[5]
     address = row[6]
-    email = row[7]
-    max_guests = row[8]
-    category = row[9]
+    address2 = row[7]
+    city = row[8]
+    state = row[9]
+    post = row[10]
+    country = row[11]
+    email = row[12]
+    max_guests = row[13]
+    category = row[14]
 
     print "<tr>"
     print "<td id=\"results_%s\">" % guest_id
@@ -98,6 +108,26 @@ try:
 
     print "<td class=ga contenteditable=true id=\"address_%s\">" % guest_id
     print address
+    print "</td>"
+
+    print "<td class=ga contenteditable=true id=\"address2_%s\">" % guest_id
+    print address2
+    print "</td>"
+
+    print "<td class=ga contenteditable=true id=\"city_%s\">" % guest_id
+    print city
+    print "</td>"
+
+    print "<td class=ga contenteditable=true id=\"state_%s\">" % guest_id
+    print state
+    print "</td>"
+
+    print "<td class=ga contenteditable=true id=\"post_%s\">" % guest_id
+    print post
+    print "</td>"
+
+    print "<td class=ga contenteditable=true id=\"country_%s\">" % guest_id
+    print country 
     print "</td>"
 
     print "<td class=gm contenteditable=true id=\"max_%s\">" % guest_id

@@ -20,8 +20,8 @@ cur = db.cursor()
 
 
 fields = cgi.FieldStorage()
-event = fields.getvalue('event')
-category = fields.getvalue('category')
+event = escape(fields.getvalue('event'))
+category = escape(fields.getvalue('category'))
 
 print "Content-Type: text/html"
 print

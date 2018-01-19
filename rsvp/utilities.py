@@ -82,3 +82,8 @@ def createFooter():
   print "</body>"
   print "</html>"
 
+def escape(input_str):
+  result = input_str.replace("'","\\'")
+  result = result.replace("\"","\\\"")
+  return result
+
