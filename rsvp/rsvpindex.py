@@ -22,8 +22,8 @@ cur = db.cursor()
 createHeader("Reshma & Rahul")
 
 print "<br>"
-print "<h3 class=faq>"
-print "Please RSVP by March 30"
+print "<h3 class=rsvp>"
+print "Please RSVP by March 1, 2018"
 print "</h3>"
 
 print "<form action=\"http://www.sidburgh.com/rsvp/rsvp.py\" method=\"post\">"
