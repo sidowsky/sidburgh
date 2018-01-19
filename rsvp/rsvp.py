@@ -61,10 +61,9 @@ try:
       else:
         print "<h3 class=rsvp>Welcome, " + first + " " + last + "!</h4>"
     
-      print "<p class=rsvp>" + email + "</p>"
-
       flag = 1
 
+    print "<br>"
     print "<h4 class=rsvp>"
     print event
     print "</h4>"
@@ -85,7 +84,7 @@ try:
 
   print "<select id=\"attending\">"
 
-  for x in range(1,guests):
+  for x in range(1,guests+1):
     print "<option>" + str(x)  + "</option>"
 
   print "</select>"

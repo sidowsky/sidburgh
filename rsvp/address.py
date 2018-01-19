@@ -51,17 +51,23 @@ try:
     guests = row[8]
 
     if first2 != "" and last2 != "":
-      print "<p>" + first + " " + last + " & " + first2 + " " + last2 + "</p>"
+      print "<h3 class=rsvp>Welcome, " + first + " " + last + " & " + first2 + " " + last2 + "!</h3>"
     else:
-      print "<p>" + first + " " + last + "</p>"
+      print "<h3 class=rsvp>Welcome, " + first + " " + last + "!</h3>"
     
 
-    print "<p>" + email + "</p>"
-
-    print "<div id=\"results\">"
-    print "Enter Address:"
     print "<br>"
-    print "<textarea id=\"address\" col=80 rows=6>" + address  +  "</textarea>"
+    print "<div id=\"results\">"
+    print "Enter Mailing Address:"
+    print "<br>"
+    #print "<textarea id=\"address\" col=80 rows=6>" + address  +  "</textarea>"
+    print "<input placeholder=\"Street Address\" type=\"text\" id=\"street1\" size=20 maxlength=20/><br>"
+    print "<input placeholder=\"\" type=\"text\" id=\"street2\" size=20 maxlength=20/><br><br>"
+    print "<input placeholder=\"City\" type=\"text\" id=\"city\" size=20 maxlength=20/>"
+    print "<input placeholder=\"State/Territory\" type=\"text\" id=\"state\" size=20 maxlength=20/><br>"
+    print "<input placeholder=\"Postcode\" type=\"text\" id=\"post\" size=20 maxlength=20/><br>"
+    print "<input placeholder=\"Country\" type=\"text\" id=\"country\" size=20 maxlength=20/><br>"
+    
     print "<br>"
     print "<input type=\"hidden\" id=\"guest\" value=\"" + str(guest_id) + "\"/>"
     print "<input type=\"hidden\" id=\"user\" value=\"" + str(user_id)  + "\"/>"
